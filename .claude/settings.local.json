@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import sys; print\\(sys.executable\\)\")",
+      "Bash(mkdir -p \"c:/Users/nguye/Documents/Summer_2026/Viettel/src\" \"c:/Users/nguye/Documents/Summer_2026/Viettel/data\" \"c:/Users/nguye/Documents/Summer_2026/Viettel/output\" *)",
+      "Bash(python src/survey.py)",
+      "Bash(PYTHONIOENCODING=utf-8 python src/survey.py)",
+      "Bash(curl -s -m 8 -o /dev/null -w \"HTTP_STATUS:%{http_code}\\\\n\" https://www.nlm.nih.gov)",
+      "Bash(curl -s -m 15 -o /dev/null -w \"CMS_STATUS:%{http_code}\\\\n\" \"https://www.cms.gov/files/zip/2024-code-descriptions-tabular-order-updated-02012024.zip\")",
+      "Bash(curl -s -m 15 \"https://clinicaltables.nlm.nih.gov/api/icd10cm/v3/search?sf=code,name&terms=&maxList=5\")",
+      "Bash(curl -s -m 15 \"https://rxnav.nlm.nih.gov/REST/rxcui.json?name=amoxicillin\")",
+      "Bash(curl -s -m 15 \"https://clinicaltables.nlm.nih.gov/api/icd10cm/v3/search?sf=code,name&terms=&maxList=3&offset=74716\")",
+      "Bash(curl -s -m 15 \"https://clinicaltables.nlm.nih.gov/api/icd10cm/v3/search?sf=code,name&terms=&maxList=1\")",
+      "Bash(curl -s -m 15 \"https://clinicaltables.nlm.nih.gov/api/icd10cm/v3/search?sf=code,name&terms=&maxList=500\" -o /tmp/test500.json)",
+      "Bash(curl -s -m 15 \"https://clinicaltables.nlm.nih.gov/api/icd10cm/v3/search?sf=code,name&terms=&maxList=500\" -o \"c:/Users/nguye/AppData/Local/Temp/test500.json\")",
+      "Bash(python -c ' *)",
+      "Bash(curl -s -m 15 \"https://clinicaltables.nlm.nih.gov/api/icd10cm/v3/search?sf=code,name&terms=K21\")",
+      "Bash(curl -s -m 15 \"https://clinicaltables.nlm.nih.gov/api/icd10cm/v3/search?sf=code,name&terms=K&maxList=500\")",
+      "Bash(python -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\('total for K:', d[0]\\); print\\('returned:', len\\(d[1]\\)\\)\")",
+      "Bash(python -c \"import requests; print\\('requests OK', requests.__version__\\)\")",
+      "Bash(PYTHONIOENCODING=utf-8 python src/download_icd10.py)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\nguye\\Documents\\Summer_2026\\Viettel"
+    ]
+  }
+}
