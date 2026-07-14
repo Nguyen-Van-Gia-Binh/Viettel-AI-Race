@@ -36,3 +36,7 @@ dev = [
 [tool.setuptools.packages.find]
 where = ["src"]
 include = ["clinlp*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
