@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Large derived artifacts — rebuild deterministically via scripts/build_*_index.py,
+# do not commit embedding indices or raw KB dumps (see README "Reproducing the data").
+data/embeddings/
+data/RxNorm/raw_rest_cache/
+*.faiss
+*.index
+
+# Model weights — document the download/build path in README instead of committing binaries.
+*.safetensors
+*.pt
+*.bin
+*.gguf
+checkpoints/
+adapters/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

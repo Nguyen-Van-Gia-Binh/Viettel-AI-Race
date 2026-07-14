@@ -1,0 +1,13 @@
+# GPU/LLM deps — install on the Linux/WSL2 training-serving host only.
+# bitsandbytes / vllm / flash-attention have weak-to-absent native Windows support;
+# do not try to install this file on the plain-Windows dev box.
+torch>=2.3
+transformers>=4.42
+peft>=0.11
+trl>=0.9
+bitsandbytes>=0.43
+vllm>=0.5
+outlines>=0.0.46
+sentence-transformers>=3.0
+rank_bm25>=0.2.2
+faiss-cpu>=1.8

@@ -1,0 +1,10 @@
+# Core deps for the rule-based baseline, eval harness, and data plumbing.
+# Mirrors [project.dependencies] in pyproject.toml.
+regex>=2024.4.16
+jsonschema>=4.22
+pydantic>=2.7
+rapidfuzz>=3.9
+pytest>=8.2
+
+# GPU/LLM deps (QLoRA training, vllm serving, retrieval) belong in requirements-llm.txt —
+# install those only on the Linux/WSL2 training-serving host, see README.
