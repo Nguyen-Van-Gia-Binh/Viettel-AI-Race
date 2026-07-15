@@ -1,0 +1,186 @@
+[
+  {
+    "text": "Tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      48,
+      61
+    ],
+    "assertions": [],
+    "candidates": [
+      "I10",
+      "J85.2",
+      "T85.03",
+      "T85.09",
+      "T85.730"
+    ]
+  },
+  {
+    "text": "bệnh tim mạch do xơ vữa động mạch",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      104,
+      137
+    ],
+    "assertions": [],
+    "candidates": [
+      "J41.8",
+      "K21.0",
+      "K21.9",
+      "M79.641",
+      "O99.12"
+    ]
+  },
+  {
+    "text": "Nhồi máu cơ tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      142,
+      157
+    ],
+    "assertions": [],
+    "candidates": [
+      "I21.9",
+      "F94.0",
+      "G04.02",
+      "H65.3",
+      "H65.30"
+    ]
+  },
+  {
+    "text": "rung nhĩ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      172,
+      180
+    ],
+    "assertions": [],
+    "candidates": [
+      "G24.0",
+      "G24.01",
+      "G24.02",
+      "G25.6",
+      "G25.61"
+    ]
+  },
+  {
+    "text": "metoprolol",
+    "type": "THUỐC",
+    "position": [
+      354,
+      364
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "6918",
+      "102313",
+      "221124",
+      "203191",
+      "866452"
+    ]
+  },
+  {
+    "text": "x-quang ngực",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1472,
+      1484
+    ],
+    "assertions": []
+  },
+  {
+    "text": "x-quang ngực",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2028,
+      2040
+    ],
+    "assertions": []
+  },
+  {
+    "text": "siêu âm tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2335,
+      2346
+    ],
+    "assertions": []
+  },
+  {
+    "text": "siêu âm tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2363,
+      2374
+    ],
+    "assertions": []
+  },
+  {
+    "text": "siêu âm tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2652,
+      2663
+    ],
+    "assertions": []
+  },
+  {
+    "text": "siêu âm tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2680,
+      2691
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nhồi máu cơ tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2847,
+      2862
+    ],
+    "assertions": [],
+    "candidates": [
+      "I21.9",
+      "F94.0",
+      "G04.02",
+      "H65.3",
+      "H65.30"
+    ]
+  },
+  {
+    "text": "rung nhĩ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2907,
+      2915
+    ],
+    "assertions": [],
+    "candidates": [
+      "G24.0",
+      "G24.01",
+      "G24.02",
+      "G25.6",
+      "G25.61"
+    ]
+  },
+  {
+    "text": "Nhồi máu cơ tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2941,
+      2956
+    ],
+    "assertions": [],
+    "candidates": [
+      "I21.9",
+      "F94.0",
+      "G04.02",
+      "H65.3",
+      "H65.30"
+    ]
+  }
+]

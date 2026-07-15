@@ -1,0 +1,40 @@
+[
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      407,
+      410
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      822,
+      825
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      962,
+      969
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "Đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      970,
+      978
+    ],
+    "assertions": []
+  }
+]

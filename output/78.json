@@ -1,0 +1,74 @@
+[
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      81,
+      83
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      84,
+      91
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      260,
+      267
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đánh trống ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      328,
+      343
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      406,
+      413
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      446,
+      448
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đánh trống ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      464,
+      479
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Siêu âm tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      562,
+      573
+    ],
+    "assertions": []
+  }
+]

@@ -1,0 +1,217 @@
+[
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      43,
+      45
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      80,
+      93
+    ],
+    "assertions": [],
+    "candidates": [
+      "I10",
+      "J85.2",
+      "T85.03",
+      "T85.09",
+      "T85.730"
+    ]
+  },
+  {
+    "text": "Đái tháo đường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      96,
+      110
+    ],
+    "assertions": [],
+    "candidates": [
+      "E11.9",
+      "T27.1",
+      "T27.5",
+      "J84.83",
+      "K14.1"
+    ]
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      119,
+      121
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Rung nhĩ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      122,
+      130
+    ],
+    "assertions": [],
+    "candidates": [
+      "H33.32",
+      "H33.321",
+      "H33.322",
+      "H33.323",
+      "H33.329"
+    ]
+  },
+  {
+    "text": "Khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      222,
+      229
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      358,
+      361
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      414,
+      417
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      504,
+      511
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      640,
+      643
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      715,
+      728
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "I10",
+      "I60.9",
+      "J85.2",
+      "O10.911",
+      "O10.912"
+    ]
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      284,
+      286
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1651,
+      1658
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1711,
+      1713
+    ],
+    "assertions": []
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1775,
+      1778
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      382,
+      384
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2048,
+      2055
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2060,
+      2068
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      790,
+      792
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  }
+]

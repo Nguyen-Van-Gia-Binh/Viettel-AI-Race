@@ -1,0 +1,85 @@
+[
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      69,
+      77
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      92,
+      99
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      123,
+      131
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      139,
+      146
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      149,
+      158
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      182,
+      190
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      239,
+      246
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      330,
+      339
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nghiệm pháp gắng sức",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      416,
+      436
+    ],
+    "assertions": []
+  }
+]

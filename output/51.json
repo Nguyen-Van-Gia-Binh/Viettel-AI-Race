@@ -1,0 +1,180 @@
+[
+  {
+    "text": "Đái tháo đường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      57,
+      71
+    ],
+    "assertions": [],
+    "candidates": [
+      "E11.9",
+      "T27.1",
+      "T27.5",
+      "J84.83",
+      "K14.1"
+    ]
+  },
+  {
+    "text": "Tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      85,
+      98
+    ],
+    "assertions": [],
+    "candidates": [
+      "I10",
+      "J85.2",
+      "T85.03",
+      "T85.09",
+      "T85.730"
+    ]
+  },
+  {
+    "text": "mệt mỏi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      284,
+      291
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      298,
+      307
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      339,
+      348
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      359,
+      368
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      418,
+      427
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "kali",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      583,
+      587
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kali",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      614,
+      618
+    ],
+    "assertions": []
+  },
+  {
+    "text": "80",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      619,
+      621
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kali",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      718,
+      722
+    ],
+    "assertions": []
+  },
+  {
+    "text": "spo2",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      952,
+      956
+    ],
+    "assertions": []
+  },
+  {
+    "text": "96",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      957,
+      959
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kali",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1032,
+      1036
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kali",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1050,
+      1054
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kali",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1080,
+      1084
+    ],
+    "assertions": []
+  },
+  {
+    "text": "kali",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1206,
+      1210
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1237,
+      1246
+    ],
+    "assertions": []
+  }
+]

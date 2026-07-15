@@ -1,0 +1,203 @@
+[
+  {
+    "text": "Đái tháo đường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      31,
+      45
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E11.9",
+      "T27.1",
+      "T27.5",
+      "J84.83",
+      "K14.1"
+    ]
+  },
+  {
+    "text": "Đái tháo đường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      55,
+      69
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E11.9",
+      "T27.1",
+      "T27.5",
+      "J84.83",
+      "K14.1"
+    ]
+  },
+  {
+    "text": "Tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      73,
+      86
+    ],
+    "assertions": [],
+    "candidates": [
+      "I10",
+      "J85.2",
+      "T85.03",
+      "T85.09",
+      "T85.730"
+    ]
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      88,
+      101
+    ],
+    "assertions": [],
+    "candidates": [
+      "I10",
+      "I60.9",
+      "J85.2",
+      "O10.911",
+      "O10.912"
+    ]
+  },
+  {
+    "text": "khó chịu vùng ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      294,
+      312
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      325,
+      334
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      337,
+      344
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      346,
+      353
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đổ mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      357,
+      366
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      637,
+      646
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      648,
+      655
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đổ mồ hôi",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      657,
+      666
+    ],
+    "assertions": []
+  },
+  {
+    "text": "điện tâm đồ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      820,
+      831
+    ],
+    "assertions": []
+  },
+  {
+    "text": "SpO2",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      981,
+      985
+    ],
+    "assertions": []
+  },
+  {
+    "text": "100%",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      986,
+      990
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nghiệm pháp gắng sức",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1172,
+      1192
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nghiệm pháp gắng sức",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1240,
+      1260
+    ],
+    "assertions": []
+  },
+  {
+    "text": "thiếu máu cơ tim cục bộ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1276,
+      1299
+    ],
+    "assertions": [],
+    "candidates": [
+      "I21.9",
+      "V93",
+      "F65.0",
+      "A42.81",
+      "A42.82"
+    ]
+  }
+]

@@ -1,0 +1,111 @@
+[
+  {
+    "text": "nhồi máu cơ tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      391,
+      406
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "I21.9",
+      "H65.3",
+      "H65.30",
+      "H65.31",
+      "H65.32"
+    ]
+  },
+  {
+    "text": "siêu âm tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      426,
+      437
+    ],
+    "assertions": []
+  },
+  {
+    "text": "siêu âm tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      628,
+      639
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      977,
+      984
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      986,
+      994
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      996,
+      1003
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1013,
+      1020
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "ngất xỉu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1034,
+      1042
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "siêu âm tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1191,
+      1202
+    ],
+    "assertions": []
+  },
+  {
+    "text": "siêu âm tim",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1253,
+      1264
+    ],
+    "assertions": []
+  }
+]

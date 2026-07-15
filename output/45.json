@@ -1,0 +1,66 @@
+[
+  {
+    "text": "đái tháo đường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      48,
+      62
+    ],
+    "assertions": [],
+    "candidates": [
+      "E11.9",
+      "T27.1",
+      "T27.5",
+      "J84.83",
+      "K14.1"
+    ]
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      69,
+      82
+    ],
+    "assertions": [],
+    "candidates": [
+      "I10",
+      "I60.9",
+      "J85.2",
+      "O10.911",
+      "O10.912"
+    ]
+  },
+  {
+    "text": "đái tháo đường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      209,
+      223
+    ],
+    "assertions": [],
+    "candidates": [
+      "E11.9",
+      "T27.1",
+      "T27.5",
+      "J84.83",
+      "K14.1"
+    ]
+  },
+  {
+    "text": "tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      230,
+      243
+    ],
+    "assertions": [],
+    "candidates": [
+      "I10",
+      "I60.9",
+      "J85.2",
+      "O10.911",
+      "O10.912"
+    ]
+  }
+]

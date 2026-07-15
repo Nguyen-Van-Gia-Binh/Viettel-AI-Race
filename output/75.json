@@ -1,0 +1,110 @@
+[
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      145,
+      153
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      640,
+      648
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      885,
+      892
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      945,
+      953
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1032,
+      1040
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1099,
+      1106
+    ],
+    "assertions": []
+  },
+  {
+    "text": "aspirin",
+    "type": "THUỐC",
+    "position": [
+      1226,
+      1233
+    ],
+    "assertions": [],
+    "candidates": [
+      "611",
+      "1191",
+      "259081",
+      "1665356",
+      "359221"
+    ]
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1400,
+      1408
+    ],
+    "assertions": []
+  },
+  {
+    "text": "troponin",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1603,
+      1611
+    ],
+    "assertions": []
+  },
+  {
+    "text": "điện tâm đồ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1657,
+      1668
+    ],
+    "assertions": []
+  },
+  {
+    "text": "điện tâm đồ",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1725,
+      1736
+    ],
+    "assertions": []
+  }
+]

@@ -1,0 +1,115 @@
+[
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      733,
+      741
+    ],
+    "assertions": [
+      "isNegated",
+      "isFamily"
+    ]
+  },
+  {
+    "text": "nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      738,
+      741
+    ],
+    "assertions": [
+      "isNegated",
+      "isFamily"
+    ]
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      748,
+      751
+    ],
+    "assertions": [
+      "isNegated",
+      "isFamily"
+    ]
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1503,
+      1511
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      743,
+      746
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1518,
+      1526
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1533,
+      1540
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1930,
+      1938
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1508,
+      1511
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "sốt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1945,
+      1948
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  }
+]

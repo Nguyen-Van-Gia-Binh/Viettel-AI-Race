@@ -1,0 +1,54 @@
+[
+  {
+    "text": "Tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      48,
+      61
+    ],
+    "assertions": [],
+    "candidates": [
+      "I10",
+      "J85.2",
+      "T85.03",
+      "T85.09",
+      "T85.730"
+    ]
+  },
+  {
+    "text": "suy tim",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      68,
+      75
+    ],
+    "assertions": [
+      "isNegated"
+    ],
+    "candidates": [
+      "L68.0",
+      "I21.9",
+      "F15.19",
+      "F15.29",
+      "F15.99"
+    ]
+  },
+  {
+    "text": "phình động mạch chủ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      231,
+      250
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "V90.20",
+      "Y62.6",
+      "Z86.003",
+      "D00",
+      "F20.8"
+    ]
+  }
+]

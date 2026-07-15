@@ -1,0 +1,202 @@
+[
+  {
+    "text": "omeprazole",
+    "type": "THUỐC",
+    "position": [
+      106,
+      116
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "283742",
+      "7646",
+      "283562",
+      "1601995",
+      "2688630"
+    ]
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      357,
+      365
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      362,
+      365
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "Đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      551,
+      559
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      676,
+      684
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      404,
+      407
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      871,
+      879
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      979,
+      987
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1031,
+      1039
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1057,
+      1060
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1138,
+      1146
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1302,
+      1310
+    ],
+    "assertions": []
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1372,
+      1380
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      681,
+      684
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nội soi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1467,
+      1474
+    ],
+    "assertions": []
+  },
+  {
+    "text": "omeprazole",
+    "type": "THUỐC",
+    "position": [
+      1596,
+      1606
+    ],
+    "assertions": [],
+    "candidates": [
+      "283742",
+      "7646",
+      "283562",
+      "1601995",
+      "2688630"
+    ]
+  },
+  {
+    "text": "chức năng gan",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1683,
+      1696
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chức năng gan",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1834,
+      1847
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nội soi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1901,
+      1908
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nội soi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      2032,
+      2039
+    ],
+    "assertions": []
+  }
+]

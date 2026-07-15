@@ -1,0 +1,68 @@
+[
+  {
+    "text": "giọng khàn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      37,
+      47
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tổn thương dây thanh quản",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      51,
+      76
+    ],
+    "assertions": [],
+    "candidates": [
+      "K21.0",
+      "K21.9",
+      "S79",
+      "C44.1",
+      "C44.5"
+    ]
+  },
+  {
+    "text": "giọng khàn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      100,
+      110
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tổn thương dây thanh quản",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      113,
+      138
+    ],
+    "assertions": [],
+    "candidates": [
+      "K21.0",
+      "K21.9",
+      "S79",
+      "C44.1",
+      "C44.5"
+    ]
+  },
+  {
+    "text": "tổn thương dây thanh quản",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      210,
+      235
+    ],
+    "assertions": [],
+    "candidates": [
+      "K21.0",
+      "K21.9",
+      "S79",
+      "C44.1",
+      "C44.5"
+    ]
+  }
+]

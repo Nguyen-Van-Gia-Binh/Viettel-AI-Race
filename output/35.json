@@ -1,0 +1,119 @@
+[
+  {
+    "text": "Tăng huyết áp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      113,
+      126
+    ],
+    "assertions": [],
+    "candidates": [
+      "I10",
+      "J85.2",
+      "T85.03",
+      "T85.09",
+      "T85.730"
+    ]
+  },
+  {
+    "text": "Đái tháo đường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      170,
+      184
+    ],
+    "assertions": [],
+    "candidates": [
+      "E11.9",
+      "T27.1",
+      "T27.5",
+      "J84.83",
+      "K14.1"
+    ]
+  },
+  {
+    "text": "Ăn uống kém",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      850,
+      861
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      873,
+      876
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      884,
+      887
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "Ăn uống kém",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1163,
+      1174
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1186,
+      1189
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1197,
+      1200
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "troponin",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1341,
+      1349
+    ],
+    "assertions": []
+  },
+  {
+    "text": "phân tích nước tiểu",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1435,
+      1454
+    ],
+    "assertions": []
+  },
+  {
+    "text": "x-quang ngực",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1524,
+      1536
+    ],
+    "assertions": []
+  }
+]

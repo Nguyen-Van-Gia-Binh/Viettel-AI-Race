@@ -1,0 +1,91 @@
+[
+  {
+    "text": "rung nhĩ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      102,
+      110
+    ],
+    "assertions": [],
+    "candidates": [
+      "G24.0",
+      "G24.01",
+      "G24.02",
+      "G25.6",
+      "G25.61"
+    ]
+  },
+  {
+    "text": "đau ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      774,
+      782
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      792,
+      799
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "đau bụng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      809,
+      817
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "buồn nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      828,
+      836
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "nôn",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      833,
+      836
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "SPO2",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1039,
+      1043
+    ],
+    "assertions": []
+  },
+  {
+    "text": "92 %",
+    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
+    "position": [
+      1046,
+      1050
+    ],
+    "assertions": []
+  }
+]

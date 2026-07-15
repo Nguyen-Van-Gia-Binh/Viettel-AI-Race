@@ -1,0 +1,103 @@
+[
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      246,
+      253
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      310,
+      312
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      388,
+      395
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      350,
+      352
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      526,
+      533
+    ],
+    "assertions": []
+  },
+  {
+    "text": "khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      673,
+      680
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      845,
+      854
+    ],
+    "assertions": [
+      "isNegated"
+    ]
+  },
+  {
+    "text": "Khó thở",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1251,
+      1258
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Ho",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1303,
+      1305
+    ],
+    "assertions": []
+  },
+  {
+    "text": "tiêu chảy",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1502,
+      1511
+    ],
+    "assertions": []
+  },
+  {
+    "text": "x-quang ngực",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1804,
+      1816
+    ],
+    "assertions": []
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "text": "ngất xỉu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      386,
+      394
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngất xỉu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      466,
+      474
+    ],
+    "assertions": [
+      "isFamily"
+    ]
+  },
+  {
+    "text": "ngất xỉu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2436,
+      2444
+    ],
+    "assertions": []
+  },
+  {
+    "text": "ngất xỉu",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      2508,
+      2516
+    ],
+    "assertions": []
+  }
+]

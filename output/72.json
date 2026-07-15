@@ -1,0 +1,38 @@
+[
+  {
+    "text": "chức năng gan",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      201,
+      214
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nội soi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      386,
+      393
+    ],
+    "assertions": []
+  },
+  {
+    "text": "chức năng gan",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      846,
+      859
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nội soi",
+    "type": "TÊN_XÉT_NGHIỆM",
+    "position": [
+      1105,
+      1112
+    ],
+    "assertions": []
+  }
+]
