@@ -1,53 +1,5 @@
-"""Workstream A: build `data/ICD-10/icd10_processed.csv` from the CMS-provided
-fixed-width reference files.
-
-Two things this module owns:
-
-1. **Code reformatting.** `icd10cm_order_2024.txt`/`icd10cm_codes_2024.txt` store
-   codes without the decimal point (e.g. "K219"), but `Topic.md`'s worked
-   example and every downstream consumer (`linking/link.py`, the submission
-   schema) use the dotted style ("K21.9"). `reformat_icd10_code()` is the one
-   place that conversion happens.
-
-2. **KB CSV export.** `build_icd10_kb()` parses the fixed-width order file
-   (preferred — it carries both a long and a short description per code,
-   unlike `icd10cm_codes_2024.txt` which only has one description column) and
-   writes `code,long_description,short_description,description,vi_aliases`.
-
-Column layout of `icd10cm_order_2024.txt`, confirmed by direct inspection
-(there is no machine-readable header row in the file itself; column offsets
-below were derived by counting characters against known rows and cross-checked
-against `data/ICD-10/icd10OrderFiles.pdf`):
-
-    [0:5]   seq_num (5 digits)
-    [5]     space
-    [6:14]  code, left-justified, space-padded to 8 chars (max real code is 7
-            chars, e.g. "S52209K" / "C441021")
-    [14]    HIPAA-valid-for-submission flag: '1' = billable leaf code,
-            '0' = category/header code, not billable. NOT used to filter rows
-            here — Topic.md's own worked example expects "K21.0" as a
-            candidate, and K21.0 is itself a '0'-flag header code, so
-            filtering to billable-only would silently drop a code the
-            organizers themselves use.
-    [15]    space
-    [16:76] "long description", space-padded to 60 chars — despite the name,
-            this is often the *abbreviated* one (CMS truncates/abbreviates
-            words to fit the fixed width, e.g. "dis" for "disease").
-    [76]    space
-    [77:]   "short description", unbounded width to end of line — despite the
-            name, this is usually the *fuller*, untruncated wording. Used as
-            the primary `description` column for that reason.
-
-Bilingual (EN + Vietnamese) descriptions are `Plan.md`'s stated follow-up
-(`linking/translate.py`, not yet built — needs either an MT pass or a curated
-glossary at real coverage). The CMS source files are English-only. The small
-`VI_ALIASES` table below is a stopgap, not a substitute for that: it only
-covers a handful of common diagnoses (the `Topic.md` GERD worked example plus
-a few terms that recur across `input/input/*.txt`), each cross-checked by hand
-against the order file so the code is verifiably correct. It exists purely so
-`linking/link.py`'s baseline fuzzy matcher has *something* Vietnamese to match
-against for CHẨN_ĐOÁN entities — real coverage requires the real translation
-module.
+"""Workstream A: build `data/ICD-10/icd10_processed.csv` from the standard
+Vietnamese ICD-10 Excel dataset (`danh-muc-ma-benh-tat-excel.xlsx`).
 """
 from __future__ import annotations
 
@@ -56,22 +8,12 @@ from pathlib import Path
 from typing import Optional
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
-DEFAULT_ORDER_FILE = REPO_ROOT / "data" / "ICD-10" / "icd10cm_order_2024.txt"
-DEFAULT_CODES_FILE = REPO_ROOT / "data" / "ICD-10" / "icd10cm_codes_2024.txt"
+DEFAULT_EXCEL_FILE = REPO_ROOT / "data" / "ICD-10" / "danh-muc-ma-benh-tat-excel.xlsx"
 DEFAULT_OUT_CSV = REPO_ROOT / "data" / "ICD-10" / "icd10_processed.csv"
 
-_CODE_START, _CODE_END = 6, 14
-_FLAG_IDX = 14
-_LONG_START, _LONG_END = 16, 76
-_SHORT_START = 77
-
 # Seed Vietnamese alias table: dotted ICD-10 code -> Vietnamese phrases that
-# should fuzzy-match to it. Every entry was manually cross-checked against
-# `icd10cm_order_2024.txt`'s English description (see docstring above).
-# NOT comprehensive — see module docstring.
+# should fuzzy-match to it.
 VI_ALIASES: dict[str, list[str]] = {
-    # Topic.md's own worked example: "bệnh trào ngược dạ dày - thực quản" is
-    # ambiguous about esophagitis status, so the organizers list BOTH codes.
     "K21.0": [
         "trào ngược dạ dày - thực quản",
         "trào ngược dạ dày thực quản",
@@ -102,89 +44,70 @@ def reformat_icd10_code(raw_code: str) -> str:
     to put after a dot) -> "A00" unchanged.
 
     Rule: insert '.' right after the 3rd character, only if a 4th+ character
-    exists. This matches every example in `Topic.md` (K21.0, K21.9) and every
-    real ICD-10-CM code (max 3 chars before the dot, up to 4 after, e.g.
-    "S52.209K").
+    exists. Removes existing dot first to handle pre-formatted inputs robustly.
     """
-    code = raw_code.strip()
+    code = str(raw_code).replace(".", "").strip()
     if len(code) <= 3:
         return code
     return f"{code[:3]}.{code[3:]}"
 
 
-def parse_order_file(path: str | Path = DEFAULT_ORDER_FILE) -> list[dict]:
-    """Parse the fixed-width order file into one dict per code. See module
-    docstring for the column layout this relies on."""
-    rows: list[dict] = []
-    with open(path, encoding="utf-8", newline="") as fh:
-        for line in fh:
-            line = line.rstrip("\r\n")
-            if not line.strip():
-                continue
-            raw_code = line[_CODE_START:_CODE_END].strip()
-            if not raw_code:
-                continue
-            flag = line[_FLAG_IDX:_FLAG_IDX + 1]
-            long_desc = line[_LONG_START:_LONG_END].strip()
-            short_desc = line[_SHORT_START:].strip()
-            rows.append(
-                {
-                    "code": reformat_icd10_code(raw_code),
-                    "raw_code": raw_code,
-                    "billable": flag == "1",
-                    "long_description": long_desc,
-                    # short_description is usually the fuller/untruncated text;
-                    # fall back to long_description on the rare row where it's
-                    # empty rather than emit a blank description.
-                    "short_description": short_desc or long_desc,
-                }
-            )
-    return rows
-
-
-def parse_codes_file(path: str | Path = DEFAULT_CODES_FILE) -> dict[str, str]:
-    """Parse the simpler 2-column `icd10cm_codes_2024.txt` (code + single
-    description, whitespace-delimited) as a supplementary code->description
-    map, used only to fill in a description for a code that's somehow missing
-    one from the order file."""
-    out: dict[str, str] = {}
-    with open(path, encoding="utf-8", newline="") as fh:
-        for line in fh:
-            line = line.rstrip("\r\n")
-            if not line.strip():
-                continue
-            parts = line.split(None, 1)
-            if len(parts) != 2:
-                continue
-            raw_code, desc = parts
-            out[reformat_icd10_code(raw_code)] = desc.strip()
-    return out
-
-
 def build_icd10_kb(
-    order_path: str | Path = DEFAULT_ORDER_FILE,
-    codes_path: Optional[str | Path] = DEFAULT_CODES_FILE,
+    excel_path: str | Path = DEFAULT_EXCEL_FILE,
     out_path: str | Path = DEFAULT_OUT_CSV,
     vi_aliases: dict[str, list[str]] = VI_ALIASES,
 ) -> int:
-    """Parse the CMS order file (+ optional codes file as a description
-    fallback), attach the seed Vietnamese alias table, and write
-    `icd10_processed.csv`. Returns the row count written."""
-    rows = parse_order_file(order_path)
-    fallback_desc = parse_codes_file(codes_path) if codes_path else {}
+    """Parse the standard Vietnamese ICD-10 Excel file, apply code formatting,
+    attach the seed/manual Vietnamese alias table, and write `icd10_processed.csv`.
+    Returns the row count written.
+    """
+    import pandas as pd
+
+    excel_path = Path(excel_path)
+    df = pd.read_excel(excel_path, sheet_name=0, header=2)
+    # Skip numbering row (first row of parsed df is index 0 containing numbers 1 to 29)
+    df = df.iloc[1:]
 
     out_rows = []
-    for row in rows:
-        description = row["short_description"] or fallback_desc.get(row["code"], "")
-        aliases = ";".join(vi_aliases.get(row["code"], []))
+    for _, row in df.iterrows():
+        raw_code = str(row.get("MÃ BỆNH", "")).strip()
+        if not raw_code or pd.isna(row.get("MÃ BỆNH")):
+            continue
+
+        formatted_code = reformat_icd10_code(raw_code)
+        
+        # Check if non-billable (i.e. column 25 is not empty/null)
+        non_billable_val = row.get("MÃ KHÔNG ĐƯỢC SỬ DỤNG VÌ CÓ MÃ 4 HOẶC 5 KÝ TỰ CỤ THỂ HƠN")
+        billable = "0" if (pd.notna(non_billable_val) and str(non_billable_val).strip() != "") else "1"
+
+        # Descriptions
+        vi_name = str(row.get("TÊN BỆNH", "")).strip()
+        en_name = str(row.get("DISEASE NAME WHO 2019 (ENGLISH)", "")).strip()
+
+        # Build vi_aliases list
+        aliases_list = []
+        
+        # Add code without dot (MÃ BỆNH KHÔNG DẤU)
+        raw_code_no_dot = str(row.get("MÃ BỆNH KHÔNG DẤU", "")).strip()
+        if raw_code_no_dot and raw_code_no_dot != formatted_code:
+            aliases_list.append(raw_code_no_dot)
+            
+        # Add manual aliases
+        manual = vi_aliases.get(formatted_code, [])
+        for m in manual:
+            if m not in aliases_list:
+                aliases_list.append(m)
+                
+        vi_aliases_str = ";".join(aliases_list)
+
         out_rows.append(
             {
-                "code": row["code"],
-                "billable": "1" if row["billable"] else "0",
-                "description": description,
-                "long_description": row["long_description"],
-                "short_description": row["short_description"],
-                "vi_aliases": aliases,
+                "code": formatted_code,
+                "billable": billable,
+                "description": vi_name,
+                "long_description": en_name,
+                "short_description": vi_name,
+                "vi_aliases": vi_aliases_str,
             }
         )
 
@@ -214,3 +137,4 @@ def load_icd10_kb(path: str | Path = DEFAULT_OUT_CSV) -> list[dict]:
 if __name__ == "__main__":
     n = build_icd10_kb()
     print(f"wrote {n} ICD-10 rows to {DEFAULT_OUT_CSV}")
+

@@ -1,1 +1,56 @@
-[]
+[
+  {
+    "text": "Nghẽn tắc và hẹp động mạch cảnh",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      51,
+      82
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I65.2",
+      "I65.1",
+      "I66.8",
+      "I66.0",
+      "I66.2"
+    ]
+  },
+  {
+    "text": "Ghi nhận trên các siêu âm doppler hai chiều gần đây có hẹp nặng, tỷ số PSV/EDV > 7, vận tốc dòng chảy tăng rõ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      308,
+      417
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "L55",
+      "J47",
+      "M79.62",
+      "G83.0",
+      "I85"
+    ]
+  },
+  {
+    "text": "Chỉ định can thiệp tái thông động mạch cảnh sau khi đã đánh giá đầy đủ nguy cơ và lợi ích điều trị",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      466,
+      564
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "C75.4",
+      "D35.5",
+      "D44.6",
+      "F79.1",
+      "F71.1"
+    ]
+  }
+]

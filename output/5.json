@@ -3,128 +3,477 @@
     "text": "bệnh tim mạch do xơ vữa động mạch",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      57,
-      90
+      59,
+      92
     ],
-    "assertions": [],
+    "assertions": [
+      "isHistorical"
+    ],
     "candidates": [
-      "J41.8",
-      "K21.0",
-      "K21.9",
-      "M79.641",
-      "O99.12"
+      "I25.1",
+      "I25.0",
+      "I70.9",
+      "I70.91",
+      "I70.90"
     ]
   },
   {
     "text": "Tăng huyết áp",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      97,
-      110
-    ],
-    "assertions": [],
-    "candidates": [
-      "I10",
-      "J85.2",
-      "T85.03",
-      "T85.09",
-      "T85.730"
-    ]
-  },
-  {
-    "text": "viêm thực quản",
-    "type": "CHẨN_ĐOÁN",
-    "position": [
-      197,
-      211
+      100,
+      113
     ],
     "assertions": [
-      "isNegated"
+      "isHistorical"
     ],
     "candidates": [
-      "K21.0",
+      "I15",
+      "P29.2",
+      "I15.8",
+      "I15.0",
+      "O16"
+    ]
+  },
+  {
+    "text": "tăng lipid máu, không đặc hiệu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      121,
+      151
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E78.5",
+      "E78.4",
+      "E78.2",
+      "R17.9",
+      "E78"
+    ]
+  },
+  {
+    "text": "bệnh trào ngược dạ dày- thực quản không có viêm thực quản",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      159,
+      216
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
       "K21.9",
-      "D89",
-      "D89.8",
-      "D89.89"
+      "K21.0",
+      "K21",
+      "K20",
+      "Q39.2"
     ]
   },
   {
     "text": "đau bụng",
-    "type": "TRIỆU_CHỨNG",
+    "type": "CHẨN_ĐOÁN",
     "position": [
-      260,
-      268
+      268,
+      276
     ],
-    "assertions": []
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "N94.0",
+      "R10.0",
+      "N94.5",
+      "N94.4",
+      "N94.6"
+    ]
   },
   {
-    "text": "đau bụng",
+    "text": "Tiền sử 1 ngày",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      387,
-      395
+      321,
+      335
     ],
-    "assertions": []
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "Khởi phát trong khi ăn tối",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      343,
+      369
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "đau bụng vùng thượng vị",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      400,
+      423
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
   },
   {
     "text": "buồn nôn",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      417,
-      425
-    ],
-    "assertions": []
-  },
-  {
-    "text": "sốt",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      466,
-      469
+      431,
+      439
     ],
     "assertions": [
-      "isNegated"
+      "isHistorical"
     ]
   },
   {
-    "text": "nôn",
+    "text": "Không có sốt, ớn lạnh, nôn, táo bón, ho, tiểu khó, hoặc các triệu chứng khác",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      422,
-      425
+      472,
+      548
     ],
     "assertions": [
-      "isNegated"
+      "isHistorical"
     ]
   },
   {
-    "text": "ho",
+    "text": "sốt đến 101.4",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      22,
-      24
+      609,
+      622
     ],
     "assertions": [
-      "isNegated"
+      "isHistorical"
     ]
   },
   {
-    "text": "sốt",
+    "text": "Tăng lên 101.8 trước thủ thuật",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      590,
-      593
+      630,
+      660
     ],
-    "assertions": []
+    "assertions": [
+      "isHistorical"
+    ]
   },
   {
-    "text": "Nội soi",
-    "type": "TÊN_XÉT_NGHIỆM",
+    "text": "hạ huyết áp, không đặc hiệu trong khi thủ thuật",
+    "type": "TRIỆU_CHỨNG",
     "position": [
-      1188,
-      1195
+      668,
+      715
     ],
-    "assertions": []
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "chỉ số huyết áp tâm thu trên đường A-line (khi đến MICU)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      723,
+      779
+    ],
+    "assertions": [
+      "isHistorical"
+    ]
+  },
+  {
+    "text": "viêm gan do men",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      811,
+      826
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "B58.1†",
+      "K70.1",
+      "O98.4",
+      "B94.2",
+      "Z24.6"
+    ]
+  },
+  {
+    "text": "ast (aspartate aminotransferase) là 319",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      834,
+      873
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "Z83.1",
+      "M03.6*",
+      "M03.64*",
+      "M03.62*",
+      "M03.63*"
+    ]
+  },
+  {
+    "text": "alt (alanine aminotransferase) là 690",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      881,
+      918
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "D61.0",
+      "N98.3",
+      "L85.2",
+      "S94.0",
+      "P54.6"
+    ]
+  },
+  {
+    "text": "phosphatase kiềm (ap) là 983",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      926,
+      954
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E83.3",
+      "J98.3",
+      "Q54.3",
+      "U84.3",
+      "H49.3"
+    ]
+  },
+  {
+    "text": "bilirubin toàn phần (tbili) là 2.4",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      962,
+      996
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "Q72.0",
+      "R17.9",
+      "E80.6",
+      "E80",
+      "L63.0"
+    ]
+  },
+  {
+    "text": "bạch cầu (wbc) 11.6",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1004,
+      1023
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "C92.0",
+      "C94.7",
+      "C91.0",
+      "C94.2",
+      "C94.0"
+    ]
+  },
+  {
+    "text": "Đã lấy cấy máu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1031,
+      1045
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "Y84.7",
+      "G95.1",
+      "O82.1",
+      "K76.4",
+      "Z02.4"
+    ]
+  },
+  {
+    "text": "Siêu âm gan mật  ghi nhận tình trạng giãn đường mật, gợi ý tắc nghẽn đường mật cần tiếp tục đánh giá và can thiệp.",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1078,
+      1192
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "K83.5",
+      "V92.2",
+      "K83.0",
+      "K81",
+      "B86"
+    ]
+  },
+  {
+    "text": "Nội soi mật tụy ngược dòng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1221,
+      1247
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "Q45.1",
+      "F10.1",
+      "T44.5",
+      "W04",
+      "K04.1"
+    ]
+  },
+  {
+    "text": "Đặt stent đường mật để dẫn lưu và giải áp đường mật",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1250,
+      1301
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "O24.0",
+      "O24.1",
+      "O24.3",
+      "Z93.6",
+      "O24.2"
+    ]
+  },
+  {
+    "text": "Đặt nội khí quản nhằm",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1304,
+      1325
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "O89.6",
+      "O29.6",
+      "Y65.3",
+      "T88.4",
+      "O74.7"
+    ]
+  },
+  {
+    "text": "Đặt catheter động mạch (",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1328,
+      1352
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "Q26.6",
+      "Q25.5",
+      "I71",
+      "I20.1",
+      "I72.5"
+    ]
+  },
+  {
+    "text": "Đặt đường truyền tĩnh mạch ngoại vi",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1354,
+      1389
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "Q27.3",
+      "T46.7",
+      "S45.3",
+      "H48.8*",
+      "I87.2"
+    ]
+  },
+  {
+    "text": "levophed",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1398,
+      1406
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "T31",
+      "T32",
+      "M25.7",
+      "G23.0",
+      "G95.1"
+    ]
+  },
+  {
+    "text": "propofol để an thần",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1414,
+      1433
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "E78.0",
+      "T34.6",
+      "M89.34",
+      "F20.6",
+      "S71"
+    ]
+  },
+  {
+    "text": "Đã đặt phentolamine",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1441,
+      1460
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "Y49.3",
+      "R06.4",
+      "Z01.2",
+      "H01",
+      "T39.1"
+    ]
   }
 ]

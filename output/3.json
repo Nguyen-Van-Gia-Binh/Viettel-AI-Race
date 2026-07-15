@@ -1,10 +1,10 @@
 [
   {
-    "text": "ngất xỉu",
+    "text": "Tái phát các cơn ngất xỉu",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      67,
-      75
+      52,
+      77
     ],
     "assertions": [
       "isHistorical"
@@ -14,129 +14,222 @@
     "text": "bệnh tim mạch do xơ vữa động mạch",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      217,
-      250
+      222,
+      255
     ],
-    "assertions": [],
+    "assertions": [
+      "isHistorical"
+    ],
     "candidates": [
-      "J41.8",
-      "K21.0",
-      "K21.9",
-      "M79.641",
-      "O99.12"
+      "I25.1",
+      "I25.0",
+      "I70.9",
+      "I70.91",
+      "I70.90"
     ]
   },
   {
     "text": "tăng huyết áp",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      253,
-      266
+      259,
+      272
     ],
-    "assertions": [],
+    "assertions": [
+      "isHistorical"
+    ],
     "candidates": [
       "I10",
-      "I60.9",
-      "J85.2",
-      "O10.911",
-      "O10.912"
+      "I11",
+      "I12",
+      "I67.4",
+      "I13"
     ]
   },
   {
-    "text": "phình động mạch chủ",
+    "text": "phình động mạch chủ nhỏ",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      269,
-      288
+      276,
+      299
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "I71.2",
+      "I71.6",
+      "I71.4",
+      "I79.0*",
+      "I71.9"
+    ]
+  },
+  {
+    "text": "không tuân thủ điều trị bằng thuốc",
+    "type": "THUỐC",
+    "position": [
+      336,
+      370
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "216292",
+      "862007",
+      "2289228",
+      "6147",
+      "4132"
+    ]
+  },
+  {
+    "text": "Hiện đang  hút thuốc",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      402,
+      422
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "Z92.2",
+      "T42",
+      "X41",
+      "Y11",
+      "X61"
+    ]
+  },
+  {
+    "text": "cơn ngất xỉu",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      65,
+      77
     ],
     "assertions": [],
     "candidates": [
-      "V90.20",
-      "Y62.6",
-      "Z86.003",
-      "D00",
-      "F20.8"
+      "G72.9",
+      "G24.9",
+      "G47.4",
+      "G41.0",
+      "A25.9"
     ]
   },
   {
-    "text": "ngất xỉu",
+    "text": "Hôm qua",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      456,
-      464
+      511,
+      518
     ],
     "assertions": []
   },
   {
-    "text": "ngất xỉu",
+    "text": "ngất xỉu trong xe",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      533,
-      541
+      548,
+      565
     ],
     "assertions": []
   },
   {
-    "text": "đánh trống ngực",
+    "text": "Tỉnh dậy thấy cháu gái hét lên",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      696,
-      711
+      569,
+      599
     ],
-    "assertions": [
-      "isNegated"
-    ]
+    "assertions": []
   },
   {
-    "text": "quầng sáng",
+    "text": "ước tính mất ý thức có thể trong 30 giây",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      720,
-      730
+      603,
+      643
     ],
-    "assertions": [
-      "isNegated"
-    ]
+    "assertions": []
   },
   {
-    "text": "chóng mặt",
+    "text": "Không có triệu chứng trước đó",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      739,
-      748
+      647,
+      676
     ],
-    "assertions": [
-      "isNegated"
-    ]
+    "assertions": []
   },
   {
-    "text": "buồn nôn",
+    "text": "Cảm thấy khỏe khi thức dậy",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      757,
-      765
+      680,
+      706
     ],
-    "assertions": [
-      "isNegated"
-    ]
+    "assertions": []
   },
   {
-    "text": "đổ mồ hôi",
+    "text": "Không đánh trống ngực",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      710,
+      731
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không quầng sáng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      735,
+      751
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không chóng mặt",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      755,
+      770
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không buồn nôn",
     "type": "TRIỆU_CHỨNG",
     "position": [
       774,
-      783
+      788
     ],
-    "assertions": [
-      "isNegated"
-    ]
+    "assertions": []
   },
   {
-    "text": "đau chân",
+    "text": "Không đổ mồ hôi",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      832,
-      840
+      792,
+      807
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Không mất kiểm soát đại tiện hoặc tiểu tiện",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      811,
+      854
+    ],
+    "assertions": []
+  },
+  {
+    "text": "đau chân sau khi đi bộ vài chặng",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      858,
+      890
     ],
     "assertions": []
   },
@@ -144,35 +237,35 @@
     "text": "đau ngực",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      867,
-      875
+      894,
+      902
     ],
     "assertions": []
   },
   {
-    "text": "khó thở",
+    "text": "khó thở khi gắng sức",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      878,
-      885
+      906,
+      926
     ],
     "assertions": []
   },
   {
-    "text": "khó thở",
+    "text": "khó thở về đêm",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      901,
-      908
+      930,
+      944
     ],
     "assertions": []
   },
   {
-    "text": "khó thở",
+    "text": "khó thở khi nằm",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      918,
-      925
+      948,
+      963
     ],
     "assertions": []
   },
@@ -180,8 +273,8 @@
     "text": "phù mắt cá chân",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      936,
-      951
+      967,
+      982
     ],
     "assertions": []
   },
@@ -189,8 +282,8 @@
     "text": "đánh trống ngực",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      954,
-      969
+      716,
+      731
     ],
     "assertions": []
   },
@@ -198,387 +291,306 @@
     "text": "ngất xỉu",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      972,
-      980
+      69,
+      77
     ],
     "assertions": []
   },
   {
-    "text": "ngất xỉu",
+    "text": "Xỉu trước",
     "type": "TRIỆU_CHỨNG",
     "position": [
-      1016,
-      1024
+      1017,
+      1026
     ],
     "assertions": []
   },
   {
-    "text": "chóng mặt",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1332,
-      1341
-    ],
-    "assertions": [
-      "isNegated"
-    ]
-  },
-  {
-    "text": "buồn nôn",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1343,
-      1351
-    ],
-    "assertions": [
-      "isNegated"
-    ]
-  },
-  {
-    "text": "đánh trống ngực",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1353,
-      1368
-    ],
-    "assertions": [
-      "isNegated"
-    ]
-  },
-  {
-    "text": "đau ngực",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1375,
-      1383
-    ],
-    "assertions": [
-      "isNegated"
-    ]
-  },
-  {
-    "text": "đau chân",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1433,
-      1441
-    ],
-    "assertions": []
-  },
-  {
-    "text": "đau ngực",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1640,
-      1648
-    ],
-    "assertions": []
-  },
-  {
-    "text": "khó thở",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1837,
-      1844
-    ],
-    "assertions": []
-  },
-  {
-    "text": "khó thở",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      2052,
-      2059
-    ],
-    "assertions": []
-  },
-  {
-    "text": "khó thở",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      2256,
-      2263
-    ],
-    "assertions": []
-  },
-  {
-    "text": "phù mắt cá chân",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      2459,
-      2474
-    ],
-    "assertions": []
-  },
-  {
-    "text": "đánh trống ngực",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      2500,
-      2515
-    ],
-    "assertions": []
-  },
-  {
-    "text": "ngất xỉu",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      2611,
-      2619
-    ],
-    "assertions": []
-  },
-  {
-    "text": "spo2",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      3156,
-      3160
-    ],
-    "assertions": []
-  },
-  {
-    "text": "rung nhĩ",
+    "text": "Được đưa đến một bệnh viện OSH sau khi bị té ngã",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      3200,
-      3208
+      3151,
+      3199
     ],
     "assertions": [],
     "candidates": [
-      "G24.0",
-      "G24.01",
-      "G24.02",
-      "G25.6",
-      "G25.61"
+      "O75.6",
+      "O75.5",
+      "Z75.1",
+      "Y36.8",
+      "Y64.8"
     ]
   },
   {
-    "text": "điện tâm đồ",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      3288,
-      3299
-    ],
-    "assertions": []
-  },
-  {
-    "text": "ecg",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      3301,
-      3304
-    ],
-    "assertions": []
-  },
-  {
-    "text": "nhồi máu cơ tim",
+    "text": "dấu hiệu sinh tồn ban đầu là mạch 83, huyết áp 159/72, nhịp thở 20, spo2 (độ bão hòa oxy) 94-95 RA",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      3336,
-      3351
+      3204,
+      3302
     ],
     "assertions": [],
     "candidates": [
-      "I21.9",
-      "H65.3",
-      "H65.30",
-      "H65.31",
-      "H65.32"
+      "R51",
+      "R06.0",
+      "W53",
+      "P50",
+      "M79.6"
     ]
   },
   {
-    "text": "công thức sinh hóa máu",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      3429,
-      3451
-    ],
-    "assertions": []
-  },
-  {
-    "text": "công thức máu",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      3465,
-      3478
-    ],
-    "assertions": []
-  },
-  {
-    "text": "chức năng gan",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      3485,
-      3498
-    ],
-    "assertions": []
-  },
-  {
-    "text": "phân tích nước tiểu",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      3506,
-      3525
-    ],
-    "assertions": []
-  },
-  {
-    "text": "troponin",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      3578,
-      3586
-    ],
-    "assertions": []
-  },
-  {
-    "text": "0.01",
-    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
-    "position": [
-      3587,
-      3591
-    ],
-    "assertions": []
-  },
-  {
-    "text": "x-quang ngực",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      3600,
-      3612
-    ],
-    "assertions": []
-  },
-  {
-    "text": "công thức sinh hóa máu",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      3978,
-      4000
-    ],
-    "assertions": []
-  },
-  {
-    "text": "công thức máu",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      4027,
-      4040
-    ],
-    "assertions": []
-  },
-  {
-    "text": "chức năng gan",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      4060,
-      4073
-    ],
-    "assertions": []
-  },
-  {
-    "text": "phân tích nước tiểu",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      4092,
-      4111
-    ],
-    "assertions": []
-  },
-  {
-    "text": "troponin",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      4126,
-      4134
-    ],
-    "assertions": []
-  },
-  {
-    "text": "0.01",
-    "type": "KẾT_QUẢ_XÉT_NGHIỆM",
-    "position": [
-      4135,
-      4139
-    ],
-    "assertions": []
-  },
-  {
-    "text": "rung nhĩ",
+    "text": "Phát hiện rung nhĩ kèm đáp ứng thất nhanh mới ở mức 130-150, sau đó là nhịp tim chậm tương đối",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      4142,
-      4150
+      3307,
+      3401
     ],
     "assertions": [],
     "candidates": [
-      "G24.0",
-      "G24.01",
-      "G24.02",
-      "G25.6",
-      "G25.61"
+      "A35",
+      "R78.0",
+      "R78.2",
+      "R93.7",
+      "D15.1"
     ]
   },
   {
-    "text": "nhồi máu cơ tim",
+    "text": "điện tâm đồ (ecg) cho thấy bằng chứng có thể là nhồi máu cơ tim vùng dưới cũ và những thay đổi sóng T không đặc hiệu thay đổi sóng t",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      4239,
-      4254
+      3406,
+      3538
     ],
     "assertions": [],
     "candidates": [
-      "I21.9",
-      "H65.3",
-      "H65.30",
-      "H65.31",
-      "H65.32"
+      "L70",
+      "M10",
+      "I25.2",
+      "C32.2",
+      "R23"
     ]
   },
   {
-    "text": "điện tâm đồ",
-    "type": "TÊN_XÉT_NGHIỆM",
+    "text": "bảng công thức sinh hóa máu cơ bản, bảng công thức máu, bảng chức năng gan và bản phân tích nước tiểu đều bình thườngbình thườngbình thườngbình thường",
+    "type": "CHẨN_ĐOÁN",
     "position": [
-      4269,
-      4280
+      3543,
+      3693
     ],
-    "assertions": []
+    "assertions": [],
+    "candidates": [
+      "L55",
+      "E29",
+      "R06",
+      "H27.0",
+      "R18"
+    ]
   },
   {
-    "text": "ecg",
-    "type": "TÊN_XÉT_NGHIỆM",
+    "text": "troponin 0.01",
+    "type": "CHẨN_ĐOÁN",
     "position": [
-      4282,
-      4285
+      3698,
+      3711
     ],
-    "assertions": []
+    "assertions": [],
+    "candidates": [
+      "E07.0",
+      "Q10.1",
+      "Q10.2",
+      "H02.0",
+      "G37.2"
+    ]
   },
   {
-    "text": "điện tâm đồ",
-    "type": "TÊN_XÉT_NGHIỆM",
+    "text": "chụp x-quang ngực cho thấy tim to nhưng không có bất thường nào khác",
+    "type": "CHẨN_ĐOÁN",
     "position": [
-      4322,
-      4333
+      3716,
+      3784
     ],
-    "assertions": []
+    "assertions": [],
+    "candidates": [
+      "S27.20",
+      "S06.10",
+      "S27.10",
+      "S06.50",
+      "S27.00"
+    ]
   },
   {
-    "text": "ecg",
-    "type": "TÊN_XÉT_NGHIỆM",
+    "text": "chụp cắt lớp vi tính sọ não bình thường",
+    "type": "CHẨN_ĐOÁN",
     "position": [
-      4335,
-      4338
+      3789,
+      3828
     ],
-    "assertions": []
+    "assertions": [],
+    "candidates": [
+      "R62",
+      "R62.8",
+      "R62.9",
+      "Z34",
+      "Z34.8"
+    ]
   },
   {
-    "text": "x-quang ngực",
-    "type": "TÊN_XÉT_NGHIỆM",
+    "text": "Nhập viện khoa Nội",
+    "type": "CHẨN_ĐOÁN",
     "position": [
-      4373,
-      4385
+      3833,
+      3851
     ],
-    "assertions": []
+    "assertions": [],
+    "candidates": [
+      "Y74",
+      "Y74.0",
+      "Y74.8",
+      "Y74.2",
+      "Y74.1"
+    ]
+  },
+  {
+    "text": "Quyết định rằng cô ấy sẽ được phục vụ tốt hơn bằng cách chuyển đến bệnh viện này để tiếp cận chẩn đoán / thăm dò",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      3856,
+      3968
+    ],
+    "assertions": [],
+    "candidates": [
+      "L70",
+      "L50",
+      "L50.6",
+      "A37",
+      "Z75.1"
+    ]
+  },
+  {
+    "text": "Tình trạng ngay trước khi nhập viện: ổn định và không có phàn nàn khi đến tầng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      3970,
+      4048
+    ],
+    "assertions": [],
+    "candidates": [
+      "S36.90",
+      "N94.9",
+      "S26.90",
+      "T11.3",
+      "Z59.0"
+    ]
+  },
+  {
+    "text": "bảng công thức sinh hóa máu cơ bản bình thường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      4102,
+      4148
+    ],
+    "assertions": [],
+    "candidates": [
+      "R79",
+      "R79.8",
+      "R79.9",
+      "Q95.0",
+      "Q95.1"
+    ]
+  },
+  {
+    "text": "bảng công thức máu bình thường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      4152,
+      4182
+    ],
+    "assertions": [],
+    "candidates": [
+      "G91.2",
+      "Q95.0",
+      "Q95.1",
+      "S30.8",
+      "I98.2*"
+    ]
+  },
+  {
+    "text": "bảng chức năng gan bình thường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      4186,
+      4216
+    ],
+    "assertions": [],
+    "candidates": [
+      "H81.9",
+      "E27.5",
+      "E22.9",
+      "E29.0",
+      "F45.3"
+    ]
+  },
+  {
+    "text": "bản phân tích nước tiểu bình thường",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      4220,
+      4255
+    ],
+    "assertions": [],
+    "candidates": [
+      "Q95",
+      "Q95.1",
+      "Q95.0",
+      "Q95.4",
+      "J21.1"
+    ]
+  },
+  {
+    "text": "Có thể là nhồi máu cơ tim vùng dưới cũ (điện tâm đồ (ecg))",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      4364,
+      4422
+    ],
+    "assertions": [],
+    "candidates": [
+      "I21.4",
+      "I25.2",
+      "I23",
+      "I23.0",
+      "I23.1"
+    ]
+  },
+  {
+    "text": "thay đổi sóng t không đặc hiệu (điện tâm đồ (ecg))",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      4426,
+      4476
+    ],
+    "assertions": [],
+    "candidates": [
+      "L56.9",
+      "F23.0",
+      "F62.1",
+      "R01.0",
+      "A97.0"
+    ]
+  },
+  {
+    "text": "Tim to (chụp x-quang ngực)",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      4498,
+      4524
+    ],
+    "assertions": [],
+    "candidates": [
+      "J01.4",
+      "S27.5",
+      "S27.51",
+      "S27.50",
+      "Q53.2"
+    ]
   }
 ]

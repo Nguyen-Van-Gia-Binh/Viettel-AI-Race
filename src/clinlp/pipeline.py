@@ -48,13 +48,16 @@ def run_pipeline(source_text: str, ner_fn: NerFn, link_fn: LinkFn | None = None)
         if span is None:
             continue  # already logged inside PositionResolver — never guess a position
 
+        start, end = span
+        matched_text = source_text[start:end]
+
         candidates = None
         if concept_type in CANDIDATE_ELIGIBLE_TYPES:
-            candidates = link_fn(entity_text, concept_type, source_text) if link_fn else []
+            candidates = link_fn(matched_text, concept_type, source_text) if link_fn else []
 
         concepts.append(
             Concept(
-                text=entity_text,
+                text=matched_text,
                 type=concept_type,
                 position=span,
                 assertions=assertions,

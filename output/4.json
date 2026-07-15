@@ -1,202 +1,380 @@
 [
   {
-    "text": "omeprazole",
-    "type": "THUỐC",
+    "text": "NSAID",
+    "type": "CHẨN_ĐOÁN",
     "position": [
-      106,
-      116
+      61,
+      66
     ],
     "assertions": [
       "isHistorical"
     ],
     "candidates": [
-      "283742",
-      "7646",
-      "283562",
-      "1601995",
-      "2688630"
+      "T39.3",
+      "Y45.3",
+      "C86.5",
+      "D81.0",
+      "D81.1"
     ]
-  },
-  {
-    "text": "buồn nôn",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      357,
-      365
-    ],
-    "assertions": []
-  },
-  {
-    "text": "nôn",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      362,
-      365
-    ],
-    "assertions": [
-      "isNegated"
-    ]
-  },
-  {
-    "text": "Đau bụng",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      551,
-      559
-    ],
-    "assertions": []
-  },
-  {
-    "text": "buồn nôn",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      676,
-      684
-    ],
-    "assertions": []
-  },
-  {
-    "text": "nôn",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      404,
-      407
-    ],
-    "assertions": [
-      "isNegated"
-    ]
-  },
-  {
-    "text": "đau bụng",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      871,
-      879
-    ],
-    "assertions": []
-  },
-  {
-    "text": "đau bụng",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      979,
-      987
-    ],
-    "assertions": []
-  },
-  {
-    "text": "buồn nôn",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1031,
-      1039
-    ],
-    "assertions": []
-  },
-  {
-    "text": "Nôn",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1057,
-      1060
-    ],
-    "assertions": []
-  },
-  {
-    "text": "đau bụng",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1138,
-      1146
-    ],
-    "assertions": []
-  },
-  {
-    "text": "đau bụng",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1302,
-      1310
-    ],
-    "assertions": []
-  },
-  {
-    "text": "buồn nôn",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      1372,
-      1380
-    ],
-    "assertions": []
-  },
-  {
-    "text": "nôn",
-    "type": "TRIỆU_CHỨNG",
-    "position": [
-      681,
-      684
-    ],
-    "assertions": []
-  },
-  {
-    "text": "nội soi",
-    "type": "TÊN_XÉT_NGHIỆM",
-    "position": [
-      1467,
-      1474
-    ],
-    "assertions": []
   },
   {
     "text": "omeprazole",
-    "type": "THUỐC",
+    "type": "CHẨN_ĐOÁN",
     "position": [
-      1596,
-      1606
+      109,
+      119
     ],
-    "assertions": [],
+    "assertions": [
+      "isHistorical"
+    ],
     "candidates": [
-      "283742",
-      "7646",
-      "283562",
-      "1601995",
-      "2688630"
+      "T39.2",
+      "A30.5",
+      "A30.4",
+      "E83.1",
+      "E83"
     ]
   },
   {
-    "text": "chức năng gan",
-    "type": "TÊN_XÉT_NGHIỆM",
+    "text": "đau vùng hạ sườn phải kéo dài vài tuần nay",
+    "type": "CHẨN_ĐOÁN",
     "position": [
-      1683,
-      1696
+      212,
+      254
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "O63",
+      "R10.2",
+      "O63.1",
+      "F62.1",
+      "O36.4"
+    ]
+  },
+  {
+    "text": "đau vùng hạ sườn phải, kèm chướng bụng và buồn nôn thoáng qua",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      322,
+      383
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "V83.1",
+      "V83.2",
+      "V83.3",
+      "M23.03",
+      "P61.5"
+    ]
+  },
+  {
+    "text": "đau lưng kéo dài từ lâu, khu trú vùng cạnh cột sống bên trái đoạn giữa lưng, đôi khi lan ra phía trước bụng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      450,
+      557
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "M54",
+      "M41",
+      "O63",
+      "M54.80",
+      "C41.2"
+    ]
+  },
+  {
+    "text": "đau bụng vùng hạ sườn phải",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      882,
+      908
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "N94.4",
+      "N94.5",
+      "M48.06",
+      "M43.06",
+      "M89.11"
+    ]
+  },
+  {
+    "text": "chướng bụng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      349,
+      360
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "Q79.4",
+      "S37.4",
+      "S37.2",
+      "E28.2",
+      "L00"
+    ]
+  },
+  {
+    "text": "buồn nôn thoáng qua",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      364,
+      383
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "P61.5",
+      "D80.7",
+      "P22.1",
+      "G45.9",
+      "G45"
+    ]
+  },
+  {
+    "text": "Nôn mửa",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1074,
+      1081
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "O21.2",
+      "K92.0",
+      "P54.0",
+      "K91.0",
+      "P78.2"
+    ]
+  },
+  {
+    "text": "đau lưng âm ỉ",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1103,
+      1116
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "M54",
+      "M54.8",
+      "M54.86",
+      "M54.82",
+      "M54.87"
+    ]
+  },
+  {
+    "text": "đau bụng vùng hạ sườn phải",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      993,
+      1019
+    ],
+    "assertions": [],
+    "candidates": [
+      "N94.4",
+      "N94.5",
+      "M48.06",
+      "M43.06",
+      "M89.11"
+    ]
+  },
+  {
+    "text": "vài tuần",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      242,
+      250
     ],
     "assertions": []
   },
   {
-    "text": "chức năng gan",
-    "type": "TÊN_XÉT_NGHIỆM",
+    "text": "chướng bụng",
+    "type": "TRIỆU_CHỨNG",
     "position": [
-      1834,
-      1847
+      641,
+      652
     ],
     "assertions": []
   },
   {
-    "text": "Nội soi",
-    "type": "TÊN_XÉT_NGHIỆM",
+    "text": "buồn nôn thoáng qua",
+    "type": "TRIỆU_CHỨNG",
     "position": [
-      1901,
-      1908
+      686,
+      705
     ],
     "assertions": []
   },
   {
-    "text": "Nội soi",
-    "type": "TÊN_XÉT_NGHIỆM",
+    "text": "Vị trí: đau bụng hạ sườn phải, đau lưng (khu trú vùng cạnh cột sống bên trái đoạn giữa lưng, đôi khi lan ra phía trước bụng.)",
+    "type": "TRIỆU_CHỨNG",
     "position": [
-      2032,
-      2039
+      1150,
+      1275
     ],
     "assertions": []
+  },
+  {
+    "text": "Thời gian: Thường xuất hiện sau bữa ăn (đau bụng, chướng bụng)",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1283,
+      1345
+    ],
+    "assertions": []
+  },
+  {
+    "text": "Các triệu chứng liên quan: chướng bụng,  buồn nôn thoáng qua, nôn, đau lưng kéo dài",
+    "type": "TRIỆU_CHỨNG",
+    "position": [
+      1353,
+      1436
+    ],
+    "assertions": []
+  },
+  {
+    "text": "nội soi thực quản - dạ dày - tá tràng ngoại trú, kết quả ghi nhận viêm dạ dày",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1491,
+      1568
+    ],
+    "assertions": [],
+    "candidates": [
+      "K27.7",
+      "K27.4",
+      "K27.5",
+      "K27.6",
+      "K20"
+    ]
+  },
+  {
+    "text": "Đã ngừng sử dụng thuốc NSAIDs",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1571,
+      1600
+    ],
+    "assertions": [],
+    "candidates": [
+      "M81.4",
+      "U07.0",
+      "P04.2",
+      "M80.4",
+      "M80.44"
+    ]
+  },
+  {
+    "text": "Được điều trị bằng omeprazole",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1603,
+      1632
+    ],
+    "assertions": [],
+    "candidates": [
+      "Z92.3",
+      "Y48.5",
+      "Z54.4",
+      "L27.0",
+      "T80"
+    ]
+  },
+  {
+    "text": "Xét nghiệm chức năng gan cho thấy men gan tăng",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1700,
+      1746
+    ],
+    "assertions": [],
+    "candidates": [
+      "M10.32",
+      "R94.1",
+      "R76.2",
+      "M99.0",
+      "R94.0"
+    ]
+  },
+  {
+    "text": "Sau đó bệnh nhân đến khoa Cấp cứu để được đánh giá và điều trị tiếp",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1749,
+      1816
+    ],
+    "assertions": [],
+    "candidates": [
+      "A00",
+      "A22",
+      "Z75.2",
+      "F70.1",
+      "F71.1"
+    ]
+  },
+  {
+    "text": "Xét nghiệm chức năng gan ghi nhận tăng men gan",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1854,
+      1900
+    ],
+    "assertions": [],
+    "candidates": [
+      "R76.2",
+      "N25.9",
+      "R73.0",
+      "N25",
+      "Z31.4"
+    ]
+  },
+  {
+    "text": "Nội soi thực quản - dạ dày - tá tràng: viêm dạ dày",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      1933,
+      1983
+    ],
+    "assertions": [],
+    "candidates": [
+      "K27",
+      "K27.1",
+      "K27.0",
+      "K27.5",
+      "K27.2"
+    ]
+  },
+  {
+    "text": "chụp cộng hưởng từ mật tụy tụi mật được thực hiện cho thấy sỏi ống dẫn mật chung đoạn cuối",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      2190,
+      2280
+    ],
+    "assertions": [],
+    "candidates": [
+      "Z28",
+      "M10",
+      "K80.8",
+      "K83.5",
+      "A22"
+    ]
   }
 ]

@@ -3,82 +3,142 @@
     "text": "xơ gan do rượu",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      61,
-      75
+      62,
+      76
     ],
     "assertions": [
       "isHistorical"
     ],
     "candidates": [
-      "E36.0",
-      "E36.01",
-      "E36.02",
-      "E36.1",
-      "E36.11"
+      "K70.3",
+      "K70",
+      "K70.1",
+      "K70.4",
+      "K70.2"
+    ]
+  },
+  {
+    "text": "sử dụng rượu bia",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      123,
+      139
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "Z72.1",
+      "F10",
+      "F10.1",
+      "F10.5",
+      "F10.3"
     ]
   },
   {
     "text": "hội chứng não gan",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      191,
-      208
+      196,
+      213
     ],
-    "assertions": [],
+    "assertions": [
+      "isHistorical"
+    ],
     "candidates": [
-      "D75",
-      "D75.8",
-      "D75.89",
-      "H04.6",
-      "H04.69"
+      "K76.7",
+      "E34.5",
+      "Q77.4",
+      "G47.1",
+      "F10.2"
     ]
   },
   {
-    "text": "hội chứng não gan",
+    "text": "đến bệnh viện  với hội chứng não gan",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      270,
-      287
+      258,
+      294
     ],
-    "assertions": [],
+    "assertions": [
+      "isHistorical"
+    ],
     "candidates": [
-      "D75",
-      "D75.8",
-      "D75.89",
-      "H04.6",
-      "H04.69"
+      "G47.1",
+      "P02.3",
+      "F11.2",
+      "F18.2",
+      "Q90"
     ]
   },
   {
-    "text": "hội chứng não gan",
+    "text": "được chuyển viện trong tình trạng hội chứng não gan tiến triển, ý thức suy giảm",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      338,
-      355
+      312,
+      391
     ],
-    "assertions": [],
+    "assertions": [
+      "isHistorical"
+    ],
     "candidates": [
-      "D75",
-      "D75.8",
-      "D75.89",
-      "H04.6",
-      "H04.69"
+      "D44.0",
+      "D44.6",
+      "V85.9",
+      "V84.3",
+      "I67.3"
     ]
   },
   {
-    "text": "hội chứng não gan",
+    "text": "nhập viện vào ngày w tiến triển hội chứng não gan",
     "type": "CHẨN_ĐOÁN",
     "position": [
-      432,
-      449
+      409,
+      458
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "D37.6",
+      "D43",
+      "D38.0",
+      "D43.2",
+      "D43.0"
+    ]
+  },
+  {
+    "text": "không thể tự chăm sóc bản thân tại nhà",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      466,
+      504
+    ],
+    "assertions": [
+      "isHistorical"
+    ],
+    "candidates": [
+      "Y61",
+      "Y69",
+      "Y63",
+      "Y63.8",
+      "Z74.2"
+    ]
+  },
+  {
+    "text": "đặt shunt dẫn lưu tĩnh mạch cửa qua da",
+    "type": "CHẨN_ĐOÁN",
+    "position": [
+      568,
+      606
     ],
     "assertions": [],
     "candidates": [
-      "D75",
-      "D75.8",
-      "D75.89",
-      "H04.6",
-      "H04.69"
+      "K76.6",
+      "Q26.6",
+      "I81",
+      "Q28.2",
+      "Q28.0"
     ]
   }
 ]

@@ -37,6 +37,8 @@ from clinlp.linking.rxnorm_kb import DEFAULT_OUT_CSV as RXNORM_CSV
 from clinlp.linking.rxnorm_kb import load_rxnorm_kb
 from clinlp.schema import ConceptType
 
+from clinlp.linking.retrieval import hybrid_link
+
 DEFAULT_TOP_K = 5
 # rapidfuzz scores are 0-100. These cutoffs are deliberately loose (Vietnamese
 # CHẨN_ĐOÁN text vs an English/vi_aliases KB, or a THUỐC mention with a
@@ -81,19 +83,27 @@ def _rxnorm_choices(csv_path: str = str(RXNORM_CSV)) -> dict[str, str]:
 def _rank_matches(entity_text: str, choices: dict[str, str], top_k: int, min_score: float) -> list[str]:
     if not entity_text or not choices:
         return []
-    # partial_ratio (best matching substring), not WRatio: KB entries are
-    # long dosage-form strings (e.g. "capsaicin 0.38 MG/ML / menthol 40
-    # MG/ML / methyl salicylate 350 MG/ML Topical Cream") while entity_text
-    # is typically just the drug/diagnosis's own short name-and-dose prefix
-    # of that string. Empirically verified against Topic.md's worked
-    # examples: WRatio scored dozens of unrelated same-length KB rows in a
-    # tie with the correct one (e.g. RxCUI 1660761 for "Capsaicin 0.38
-    # MG/ML" fell out of the top 40 entirely), while partial_ratio correctly
-    # ranks the true match #1 in every case tested (both RxNorm and ICD-10).
-    # process.extract on a dict returns (matched_string, score, key) tuples,
-    # already sorted by score descending.
-    results = process.extract(entity_text, choices, scorer=fuzz.partial_ratio, limit=top_k)
-    return [key for _matched_text, score, key in results if score >= min_score]
+    # Extract more candidates to perform tie-breaking.
+    candidates_limit = max(top_k * 10, 50)
+    results = process.extract(entity_text, choices, scorer=fuzz.partial_ratio, limit=candidates_limit)
+    
+    processed = []
+    entity_lower = entity_text.strip().lower()
+    for matched_text, score, key in results:
+        if score < min_score:
+            continue
+        
+        # Split by " | " to check for exact component match
+        parts = [p.strip().lower() for p in matched_text.split(" | ")]
+        is_exact = 1 if entity_lower in parts else 0
+        overall_ratio = fuzz.ratio(entity_lower, matched_text.lower())
+        
+        processed.append((key, score, is_exact, overall_ratio))
+        
+    # Sort by: partial_ratio score (descending), is_exact component (descending), overall ratio (descending)
+    processed.sort(key=lambda x: (x[1], x[2], x[3]), reverse=True)
+    return [key for key, score, is_exact, overall_ratio in processed[:top_k]]
+
 
 
 def link(
@@ -111,8 +121,16 @@ def link(
     if not entity_text:
         return []
 
+    # Attempt advanced hybrid retrieval first
+    choices_dict = _icd10_choices() if concept_type == ConceptType.CHAN_DOAN else _rxnorm_choices()
+    candidates = hybrid_link(entity_text, choices_dict, top_k=top_k)
+    if candidates:
+        return candidates
+
+    # Fallback to the robust rapidfuzz-based match
     if concept_type == ConceptType.CHAN_DOAN:
         return _rank_matches(entity_text, _icd10_choices(), top_k, MIN_SCORE_ICD10)
     if concept_type == ConceptType.THUOC:
         return _rank_matches(entity_text, _rxnorm_choices(), top_k, MIN_SCORE_RXNORM)
     return []
+
